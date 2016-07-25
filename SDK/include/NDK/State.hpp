@@ -1,4 +1,4 @@
-// Copyright (C) 2015 Jérôme Leclercq
+// Copyright (C) 2015 JÃ©rÃ´me Leclercq
 // This file is part of the "Nazara Development Kit"
 // For conditions of distribution and use, see copyright notice in Prerequesites.hpp
 
@@ -17,7 +17,7 @@ namespace Ndk
 	{
 		public:
 			State() = default;
-			~State() = default;
+			virtual ~State() = default;
 
 			virtual void Enter(StateMachine& fsm) = 0;
 			virtual void Leave(StateMachine& fsm) = 0;
